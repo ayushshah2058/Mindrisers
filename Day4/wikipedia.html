@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        table{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit" action="post">
+        <table>
+            <thead>
+                <th>Contents <button>hide</button></th>
+                <th>History
+                    <hr>
+                </th>
+                <th>Apperence <button>hide</button></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>(Top)</td>
+                    <td>Main article: History of Nepal</td>
+                    <td>Text
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Etymology</td>
+                    <td>Prehistory</td>
+                    <td>
+                        <label for="Small">Small</label>
+                        <input type="radio" id="Small"><br>
+                        <label for="Medium">Medium</label>
+                        <input type="radio" id="Medium"><br>
+                        <label for="Large">Large</label>
+                        <input type="radio" id="Large"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><details><summary>History</summary>
+                    <ul><li>add</li></ul></details></td>
+                    <td width="70%"><p>By 55,000 years ago, the first modern humans had arrived on the Indian subcontinent from
+                        Africa.[32][33][34] The earliest known modern human remains in South Asia date to about 30,000
+                        years ago.[35] The oldest discovered archaeological evidence of human settlements in Nepal dates
+                        to around the same time.[36]</p>
+
+                        <p>After 6500 BC, evidence for the domestication of food crops and animals, construction of
+                        permanent structures, and storage of agricultural surplus appeared in Mehrgarh and other sites
+                        in what is now Balochistan.[37] These gradually developed into the Indus Valley
+                        Civilisation,[38][37] the first urban culture in South Asia.[39] Prehistoric sites of
+                        palaeolithic, mesolithic and neolithic origins have been discovered in the Siwalik hills of Dang
+                        district.[40] The earliest inhabitants of modern Nepal and adjoining areas are believed to be
+                        people from the Indus Valley Civilisation. It is possible that the Dravidian people whose
+                        history predates the onset of the Bronze Age in the Indian subcontinent (around 6300 BC)
+                        inhabited the area before the arrival of other ethnic groups like the Tibeto-Burmans and
+                        Indo-Aryans.[41] By 4000 BC, the Tibeto-Burmese people had reached Nepal either directly across
+                        the Himalayas from Tibet or via Myanmar and north-east India or both.[42] Stella Kramrisch
+                        (1964) mentions a substratum of pre-Dravidians and Dravidians, who were in Nepal even before the
+                        Newars, who formed the majority of the ancient inhabitants of the valley of Kathmandu.[43]</p>
+                    </td>
+                    <td>
+                        <h6>Width</h6><br>
+                        <input type="radio">Small<br>
+                        <input type="radio">Standard<br>
+                        <input type="radio">Large<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><details>Geography</details></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
