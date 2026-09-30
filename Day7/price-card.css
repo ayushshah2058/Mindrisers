@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+}
+h2{
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.pricing-info{
+    margin-left: 10px;
+    padding: 5px;
+    width: 40%;
+}
+.container{
+    display: flex;
+    align-content: space-between;
+}
+.price-card{
+    background-color: rgb(37, 37, 37);
+    width: 300px;
+    height: 400px;
+    margin: 25px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid whitesmoke;
+}
+.price-card:hover{
+    background-color: rgb(88, 0, 196);
+    transition: 0.2s ease-in-out;
+    button{
+        background-color: white;
+        border-color: black;
+    }
+    a{
+        color: black;
+    }
+}
+hr{
+    margin: 5px 0;
+}
+li{
+    list-style: none;
+    padding: 5px;
+}
+button{
+    background-color: transparent;
+    border: 0.5px solid white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.plan{
+    width: 60px;
+    font-size: 12px;
+    margin: 0 5px;
+    
+}
+.plan:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+.buttons-plan{
+    display:flex;
+}
+i{
+    margin-right: 5px;
+}
