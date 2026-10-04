@@ -25,20 +25,23 @@
     </header>
     <main>
       <section class="hero_section" id="home">
-        <div class="hero_title">
-          <h1 class="hero_title">Hi,</h1>
-          <h1 class="hero_title">I'am Ayush</h1>
-          <h1 class="hero_title">Web Developer</h1>
-          <button class="hero_button">Contact<a href="#contact"></a></button>
-        </div>
-        <div class="home_social">
-          <a href="" class="home_social_icons"
+        <div class="left-container">
+
+          <div class="hero_title">
+            <h1 class="hero_title">Hi,</h1>
+            <h1 class="hero_title">I'am <span>Ayush</span></h1>
+            <h1 class="hero_title">Web Developer</h1>
+            <button class="hero_button">Contact<a href="#contact"></a></button>
+          </div>
+          <div class="home_social">
+            <a href="" class="home_social_icons"
             ><i class="fa fa-github"></i
-          ></a>
-          <a href="" class="home_social_icons"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-          <a href="" class="home_social_icons"></a>
+              ></a>
+              <a href="" class="home_social_icons"
+              ><i class="fa fa-linkedin"></i
+                ></a>
+                <a href="" class="home_social_icons"></a>
+        </div>
         </div>
         <div class="home_image">
           <img src="photo.jpg" alt="image" />
@@ -46,7 +49,7 @@
       </section>
       <section class="about_section" id="about">
         <h2 class="about_title">About</h2>
-        <div class="about_containter">
+        <div class="about_container">
           <div class="about_photo">
             <img src="photo.jpg" alt="photo" class="about_img" />
           </div>
@@ -65,27 +68,27 @@
         <div class="skills_container">
           <div class="skills_info">
             <h3 class="skills_container_title">Professional Skills</h3>
-            <p class="skills_info">
+            <p class="skills_desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae explicabo sapiente in rerum alias. Tempora!
             </p>
-            <div class="html_skills">
-              <div class="html_name"><h4>HTML</h4></div>
+            <div class="skills-data">
+              <div class="skills-name"><h4>HTML</h4></div>
               <div class="percentage"><span>95%</span></div>
               <div class="percentage_bar"></div>
             </div>
-            <div class="css_skills">
-              <div class="css_name"><h4>CSS</h4></div>
+            <div class="skills-data">
+              <div class="skills-name"><h4>CSS</h4></div>
               <div class="percentage"><span>85%</span></div>
               <div class="percentage_bar"></div>
             </div>
-            <div class="javascript_skills">
-              <div class="javascript_name"><h4>Javascript</h4></div>
+            <div class="skills-data">
+              <div class="skills-name"><h4>Javascript</h4></div>
               <div class="percentage"><span>45%</span></div>
               <div class="percentage_bar"></div>
             </div>
-            <div class="react_skills">
-              <div class="react_name"><h4>React</h4></div>
+            <div class="skills-data">
+              <div class="skills-name"><h4>React</h4></div>
               <div class="percentage"><span>5%</span></div>
               <div class="percentage_bar"></div>
             </div>
@@ -96,6 +99,7 @@
         </div>
       </section>
       <section class="work_section" id="work">
+        <h2 class="work-title">Work</h2>
         <div class="work_container">
           <a
             href="https://www.facebook.com/"
@@ -154,17 +158,15 @@
         </div>
       </section>
       <section class="contact_section" id="contact">
+        <h3 class="contact_title">Contact</h3>
         <div class="contact_container">
-            <h3 class="contact_title">Contact</h3>
-            <div class="contact_form">
                 <form action="submit" method="post" class="form" >
-                    <div class="form-group"><input type="text" name="name" placeholder="Name"></div>
-                    <div class="form-group"><input type="email" name="email" placeholder="Email"></div>
-                    <div class="form-group"><input type="number" name="contact" placeholder="Contact number"></div>
-                    <div class="form-group"><textarea type="text" name="message" placeholder="Message" rows="5"></textarea></div>
-                    <button class="contact-button" type="submit">Send Message</button>
+                    <input class="contact-input" type="text" name="name" placeholder="Name"><br>
+                    <input class="contact-input" type="email" name="email" placeholder="Email"><br>
+                    <input class="contact-input" type="number" name="contact" placeholder="Contact number"><br>
+                    <textarea class="contact-input" type="text" name="message" placeholder="Message" rows="5"></textarea><br>
+                    <button class="contact-button" type="submit">Send Message</button><br>
                 </form>
-            </div>
         </div>
       </section>
       <footer>
