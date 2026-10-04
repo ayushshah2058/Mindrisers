@@ -20,7 +20,7 @@ h2{
 }
 .container{
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
 }
 .price-card{
     background-color: rgb(37, 37, 37);
@@ -54,7 +54,7 @@ button{
     border: 0.5px solid white;
     width: 100px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 16px;
     text-align: center;
     align-items: center;
@@ -74,7 +74,7 @@ a{
     width: 60px;
     font-size: 12px;
     margin: 0 5px;
-    
+    border-radius: 10px;
 }
 .plan:hover{
     background-color: white;
