@@ -6,9 +6,13 @@
 }
 :root{
     --color1: #DC9457;
+    --bg-color: #1c2123;
+    --text-color2: white;
+    --text-color2: #9B9B9B;
 }
 body{
     font-family: "rubik", sans-serif;
+    background-color: var(--bg-color);
     
 }
 /* Header */
@@ -17,7 +21,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 16px ;
-    background-color: black;
+    background-color: var(--bg-color);
     color: var(--color1);
     ul, .nav-link1 , .nav-link2{
         display: flex;
@@ -79,4 +83,71 @@ a{
     text-align: center;
     transition: 5s ease-in-out;
 }
+.container-burger{
+    padding-top: 16px;
     
+}
+.burger-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 16px;
+}
+.burger-title{
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    max-width: 380px;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    color: var(--text-color2);
+    padding: 2rem 0.5rem;
+    margin: 1rem ;
+
+}    
+
+.big{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color1);
+    border-color: var(--color1);
+}
+
+.burger-cards{
+    display: flex;
+    justify-content: space-around;
+    padding: padding: 24px 16px;
+    margin: 16px;
+}
+.burger-card{
+    flex: 1;
+    max-width: 35%;
+    padding: 16px;
+    text-align: center;
+
+}
+img{
+    max-width: 80%;
+    
+}
+.card-title{
+    color: white;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 800;
+    width: 80%;
+}
+.card-info{
+    color: #9B9B9B;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem ;
+    line-height: 1.5;
+}
