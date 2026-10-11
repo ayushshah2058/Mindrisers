@@ -119,7 +119,7 @@ a{
 .burger-cards{
     display: flex;
     justify-content: space-around;
-    padding: padding: 24px 16px;
+    padding: 24px 16px;
     margin: 16px;
 }
 .burger-card{
