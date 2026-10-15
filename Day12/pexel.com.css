@@ -68,11 +68,12 @@ hr{
 }
 .left-hero{
     width: 50%;
-    /* max-width: unset; */
+    max-width: unset;
 }
 .hero-title>h1{
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
+    
 }
 .hero-searchbar{
     width: 100%;
@@ -157,4 +158,27 @@ hr{
 .hero-nav-link:active{
     background-color: black;
     color: white;
+}
+.photo-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.photo-colums{
+    margin: 1rem;
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.image-card{
+    width: 280px;
+}
+.image-card>img{
+    width: 100%;
+    border-radius: 24px;
 }
