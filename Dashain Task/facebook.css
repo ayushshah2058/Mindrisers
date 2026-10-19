@@ -1,7 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  "Segoe UI", Arial, sans-serif;
 }
 
 nav{
@@ -52,16 +54,15 @@ img{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     gap: 1rem;
     padding: 8px;
     i{
-        /* background-color: #908c8c; */
+        background-color: #908c8c;
         border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        /* padding: 1rem 0.5rem; */
-        text-align: center;
+       font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 0 auto;
     }
 }
 
@@ -73,7 +74,7 @@ img{
 }
 .left-side{
     background-color: aqua;
-    width: 25%;
+    width: 20%;
     height: 100%;
 }
 .center{
@@ -85,23 +86,51 @@ img{
     width: 25%;
    
 }
-.left-nav{
-    padding: 0.5rem 1rem;
+.left-nav,.see-more{
+    margin: 0.5rem;
+    padding: 0.5rem;
     font-weight: 400;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: transparent;
+}
+.left-nav>i{
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+}
+.left-nav>h3{
+    font-size: 1rem;
+    font-weight: 600;
 }
 .name-logo{
     display: flex;
     gap: 1rem;
     align-items: center;
 }
+.left-nav:hover{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 12px;
+}
 .see-more{
     width: 80%;
     text-align: center;
-    background-color: #dddddd;
-    color: white;
     border: none;
     border-radius: 16px;
     font-weight: 300;
     height: 24px;
-    margin: 0 1rem 1rem 1rem;
+    i{
+        background-color: #dddddd;
+        border-radius: 50%;
+        padding: 0.3rem 1rem 0.3rem 0.5rem;
+        margin: 0.4rem;
+       
+    }
+    h3{
+        font-size: 1rem;
+        font-weight: 550;
+    }
+    
 }
+
+/* sdksamk */
