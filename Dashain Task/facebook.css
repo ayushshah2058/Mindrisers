@@ -5,7 +5,12 @@
     box-sizing: border-box;
     font-family:  "Segoe UI", Arial, sans-serif;
 }
-
+body{
+    /* overflow: hidden; */
+}
+header{
+    position: sticky;
+}
 nav{
     display: flex;
     height: 60px;
@@ -70,20 +75,27 @@ img{
     display: flex;
     height: calc(100vh-60px);
     width: 100vw;
-    border: 2px solid red;
+    
 }
 .left-side{
-    background-color: aqua;
     width: 20%;
-    height: 100%;
+    height: calc(100vh-60px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border: 2px solid red;
+    position: sticky;
 }
 .center{
     background-color: brown;
-    width: 50%;
+    width: 60%;
+    border: 2px solid red;
+    overflow-y: auto;
+    position: sticky;
 }
 .right-side{
     background-color: yellow;
     width: 25%;
+    border: 2px solid red;
    
 }
 .left-nav,.see-more{
@@ -101,7 +113,7 @@ img{
 }
 .left-nav>h3{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 6git 00;
 }
 .name-logo{
     display: flex;
@@ -132,5 +144,25 @@ img{
     }
     
 }
+.left-nav-2nd{
+    h2{
+        font-size: 1rem;
+        padding: 1rem;
+        color: #535151;
+    }
+    img{
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .left-nav{
+        margin: 0.5rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+.left-nav-shortcut{
+    h3 {
+    font-weight: 500; 
+}
+}
 
-/* sdksamk */
+
