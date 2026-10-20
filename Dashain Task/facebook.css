@@ -94,7 +94,6 @@ img{
     padding: 1rem;
 }
 .right-sidebar{
-    background-color: yellow;
     width: 25%;
     border: 2px solid red;
     padding: 1rem;
@@ -180,7 +179,6 @@ img{
     }
 }
 .sponsored-box{
-}
 .ads{
     display: flex;
     text-wrap: wrap;
@@ -201,4 +199,29 @@ img{
         text-wrap: wrap;
     }
 }
+}
+.birthdays{
+    margin: 0.5rem 0;
+    p{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
 
+.contacts-box{
+    margin: 0.5rem 0;
+}
+.contacts{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    img{
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+    }
+    h4{
+        font-weight: 500;
+    }
+}
