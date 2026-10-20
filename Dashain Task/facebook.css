@@ -5,7 +5,12 @@
     box-sizing: border-box;
     font-family:  "Segoe UI", Arial, sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
+header{
+    position: sticky;
+}
 nav{
     display: flex;
     height: 60px;
@@ -70,20 +75,28 @@ img{
     display: flex;
     height: calc(100vh-60px);
     width: 100vw;
-    border: 2px solid red;
+    
 }
 .left-side{
-    background-color: aqua;
     width: 20%;
-    height: 100%;
+    height: calc(100vh-60px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border: 2px solid red;
+    position: sticky;
 }
 .center{
     background-color: brown;
-    width: 50%;
+    width: 55%;
+    border: 2px solid red;
+    overflow-y: auto;
+    position: sticky;
+    padding: 1rem;
 }
-.right-side{
-    background-color: yellow;
+.right-sidebar{
     width: 25%;
+    border: 2px solid red;
+    padding: 1rem;
    
 }
 .left-nav,.see-more{
@@ -101,7 +114,7 @@ img{
 }
 .left-nav>h3{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 6git 00;
 }
 .name-logo{
     display: flex;
@@ -111,6 +124,9 @@ img{
 .left-nav:hover{
     background-color: rgba(255,255,255,0.8);
     border-radius: 12px;
+}
+.left-nav-1st>hr{
+    margin: 0.5rem;
 }
 .see-more{
     width: 80%;
@@ -132,5 +148,80 @@ img{
     }
     
 }
+.left-nav-2nd{
+    h2{
+        font-size: 1rem;
+        padding: 1rem;
+        color: #535151;
+    }
+    img{
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .left-nav{
+        margin: 0.5rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+.left-nav-shortcut{
+    h3 {
+    font-weight: 500; 
+}
+}
 
-/* sdksamk */
+/* Right Sidebar */
+.right-sidebar{
+    margin-right: 1rem;
+    h2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #535151;
+    }
+}
+.sponsored-box{
+.ads{
+    display: flex;
+    text-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    img{
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+    }
+    h3{
+        font-size: 1rem;
+        margin: 0.25rem;
+        
+    }
+    p{
+        margin: 0.25rem;
+        text-wrap: wrap;
+    }
+}
+}
+.birthdays{
+    margin: 0.5rem 0;
+    p{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+.contacts-box{
+    margin: 0.5rem 0;
+}
+.contacts{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    img{
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+    }
+    h4{
+        font-weight: 500;
+    }
+}
