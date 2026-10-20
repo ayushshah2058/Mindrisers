@@ -6,7 +6,7 @@
     font-family:  "Segoe UI", Arial, sans-serif;
 }
 body{
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 header{
     position: sticky;
@@ -87,15 +87,17 @@ img{
 }
 .center{
     background-color: brown;
-    width: 60%;
+    width: 55%;
     border: 2px solid red;
     overflow-y: auto;
     position: sticky;
+    padding: 1rem;
 }
-.right-side{
+.right-sidebar{
     background-color: yellow;
     width: 25%;
     border: 2px solid red;
+    padding: 1rem;
    
 }
 .left-nav,.see-more{
@@ -123,6 +125,9 @@ img{
 .left-nav:hover{
     background-color: rgba(255,255,255,0.8);
     border-radius: 12px;
+}
+.left-nav-1st>hr{
+    margin: 0.5rem;
 }
 .see-more{
     width: 80%;
@@ -165,4 +170,35 @@ img{
 }
 }
 
+/* Right Sidebar */
+.right-sidebar{
+    margin-right: 1rem;
+    h2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #535151;
+    }
+}
+.sponsored-box{
+}
+.ads{
+    display: flex;
+    text-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    img{
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+    }
+    h3{
+        font-size: 1rem;
+        margin: 0.25rem;
+        
+    }
+    p{
+        margin: 0.25rem;
+        text-wrap: wrap;
+    }
+}
 
