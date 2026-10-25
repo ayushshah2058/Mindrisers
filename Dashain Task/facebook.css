@@ -86,7 +86,6 @@ img{
     position: sticky;
 }
 .center{
-    background-color: brown;
     width: 55%;
     border: 2px solid red;
     overflow-y: auto;
@@ -224,4 +223,42 @@ img{
     h4{
         font-weight: 500;
     }
+}
+
+/* Center */
+.new-post{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 16px;
+    background-color: #e6e6e6;
+    
+}
+.new-post textarea{
+    flex: 1;
+    border-radius: 32px;
+    background-color: #acacac;
+    color: white;
+    /* padding: 0.25rem 0.5rem; */
+    font-size: 16px;  
+    align-content: center;
+    font-weight: 400;
+}
+.new-post textarea::placeholder{
+    color: white;
+    padding-left: 0.5rem;
+}
+.new-post-icons{
+    font-size: 1.75rem;
+    .video{
+        color: red;
+    }
+    .images{
+        color: green;
+    }
+    .smile{
+        color: yellow;
+    }
+    gap: 1rem;
 }
