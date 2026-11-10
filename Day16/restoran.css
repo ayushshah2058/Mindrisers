@@ -10,8 +10,22 @@
     --dark: #0F172B;
 
 }
-body{
+
+body {
     overflow-x: hidden;
+    font-family: 'Nunito';
+    animation: visible 1s ;
+}
+@keyframes visible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+a {
+    text-decoration: none;
 }
 
 header {
@@ -42,7 +56,7 @@ nav {
         font-style: normal;
         font-weight: 500;
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         list-style: none;
         align-items: center;
         text-transform: uppercase;
@@ -52,11 +66,15 @@ nav {
             text-decoration: none;
             color: var(--light);
         }
+        a:hover{
+            color: var(--primary-font-color);
+            transition: 0.5s;
+        }
     }
 }
 
 .hero-wrapper {
-    height: 100vh;
+    height: 120vh;
     background-image: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(https://preview.themewagon.com/restoran/img/bg-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,39 +84,86 @@ nav {
 .brand-logo {
     color: var(--primary-font-color);
 }
-.nav-button{
+
+.nav-button {
     padding: 0.5rem 1.5rem;
     background-color: var(--primary-font-color);
-    
+
 }
-@keyframes header{
-    to{
+
+@keyframes header {
+    to {
         background-color: var(--dark);
         position: fixed;
     }
 }
-.hero{
+
+.hero {
     display: flex;
-    margin-top: 3rem;
-    margin: 0 3rem;
+    margin: 4rem auto;
+    padding: 3rem;
+    align-items: center;
 }
-.hero-info{
+
+.hero-info {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+    animation: slideinleft 0.25s ease-in 1s;
 }
-.hero-img{
+
+.hero-img {
     width: 50%;
     position: absolute;
     right: 0;
-    padding: 2rem;
+    padding: 1rem 3rem;
 
-    >img{
+    >img {
         animation: hero-img 50s linear;
         max-width: 100%;
     }
 }
-@keyframes hero-img{
-    to{rotate: 360deg;}
+
+@keyframes hero-img {
+    to {
+        rotate: 360deg;
+    }
 }
-.hero-heading{
+
+.hero-heading {
     font-size: 4rem;
+    color: var(--light);
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: var(--light);
+    margin-bottom: 1rem;
+
+}
+
+.hero-button {
+    margin-top: 2rem;
+}
+
+.hero-btn {
+
+    font-size: 1rem;
+    background-color: var(--primary-font-color);
+    padding: 1rem 2rem;
+    color: var(--light);
+    text-transform: uppercase;
+}
+@keyframes slideinleft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
