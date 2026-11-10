@@ -15,6 +15,7 @@ body {
     overflow-x: hidden;
     font-family: 'Nunito';
     animation: visible 1s ;
+    background-color: #F1F8FF;
 }
 @keyframes visible{
     0%{
@@ -165,5 +166,47 @@ nav {
     }
     100%{
         transform: translateX(0%);
+    }
+}
+.service-row{
+    display: flex;
+    margin: 3rem 5rem;
+    gap: 2rem;
+}
+.service-box{
+    padding: 2rem;
+    background-color: white;
+    animation: SlideUp 1s;
+    i{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--primary-font-color);
+    }
+    h5{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        font-size: 1rem;
+        color: #666565;;
+    }
+}
+.service-box:hover{
+    background-color: var(--primary-font-color);
+    color: var(--light);
+    transition: 0.25s;
+    i,h5,p{
+        transition: 0.25s;
+        color: var(--light);
+    }
+}
+
+@keyframes SlideUp{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }
