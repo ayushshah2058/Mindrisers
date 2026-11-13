@@ -123,7 +123,7 @@ nav {
     padding: 1rem 3rem;
 
     >img {
-        animation: hero-img 50s linear;
+        animation: hero-img 50s linear infinite;
         max-width: 100%;
     }
 }
@@ -220,6 +220,9 @@ nav {
 
 .left-about{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .right-about{
     width: 50%;
@@ -266,5 +269,11 @@ nav {
     span{
         font-weight: 200;
         text-transform: capitalize;
+    }
+}
+.about-img-box{
+    width: 50%;
+    img{
+        width: 100%;
     }
 }
