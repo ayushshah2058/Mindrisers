@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
     font-family: 'Nunito';
     animation: visible 1s ;
-    background-color: #F1F8FF;
+    background-color: #ffffff;
 }
 @keyframes visible{
     0%{
@@ -177,6 +177,7 @@ nav {
     padding: 2rem;
     background-color: white;
     animation: SlideUp 1s;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     i{
         font-size: 3rem;
         margin-bottom: 1rem;
@@ -228,14 +229,15 @@ nav {
     width: 50%;
     padding: 1rem;
 }
-.about-h4{
+.about-h4,.menu-h4{
+    font-family: "Pacifico";
     font-size: 1.5rem;
     color: var(--primary-font-color);
-    text-transform: lowercase;
-    font-style: italic;
+    font-weight: 300;
 }
-.about-h2{
-    font-size: 2rem;
+.about-h2, .menu-h2{
+    font-family: "Nunito",sans-serif;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     i{
@@ -276,4 +278,96 @@ nav {
     img{
         width: 100%;
     }
+}
+
+.about-button {
+    margin-top: 2rem;
+}
+
+.about-btn {
+
+    font-size: 1rem;
+    background-color: var(--primary-font-color);
+    padding: 1rem 2.5rem;
+    color: var(--light);
+    text-transform: uppercase;
+}
+/* Menu section */
+.menu{
+    margin: 10rem 5rem;
+}
+.menu-h2, .menu-h4{
+    text-align: center;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.menu-nav-box{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    i{
+        color: var(--primary-font-color);
+    }
+    h2{
+        font-size: 3rem;
+        color: var(--primary-font-color);
+    }
+    h4{
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    span{
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+}
+.menu-nav-box:hover{
+    border-bottom: 2px solid var(--primary-font-color);
+
+}
+
+.menu-items{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-items-box{
+    margin-top: 2rem;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    width: 45%;
+    padding: 0.25rem 1rem;
+}
+.items-img{
+    img{
+        width: 80px;
+
+    }
+}
+.items-name{
+    margin: auto 0;
+    h4{
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+    hr{
+        margin: 0.5rem 0;
+    }
+    p{
+        font-size: 0.8rem;
+        color: #666565;
+    }
+    
+}
+.items-price-h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-font-color);
 }
