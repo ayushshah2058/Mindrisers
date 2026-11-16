@@ -295,6 +295,7 @@ nav {
 /* Menu section */
 .menu{
     margin: 10rem 5rem;
+    animation: SlideUp 1s;
 }
 .menu-h2, .menu-h4{
     text-align: center;
@@ -333,12 +334,12 @@ nav {
 
 .menu-items{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 .menu-items-box{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     display: flex;
     /* justify-content: space-between; */
     gap: 1rem;
